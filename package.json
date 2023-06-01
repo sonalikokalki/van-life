@@ -36,6 +36,7 @@
     ]
   },
   "devDependencies": {
+    "miragejs": "^0.1.47",
     "react-router-dom": "^6.11.2"
   }
 }

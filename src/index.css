@@ -12,7 +12,7 @@
   --darkDray:#252525;
 }
 p{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 h1{
   font-size: 3rem;
@@ -52,6 +52,7 @@ nav .nav-link{
   gap: 2rem;
   width: 100%;
   padding:2rem;
+  max-width: 100%;
 }
 .home h1{
   font-size: 3rem;
@@ -99,4 +100,94 @@ img{
 }
 .about-orage-section h2{
   padding-bottom: 2rem;
+}
+/* Vans page */
+.van-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  /* padding: 2rem; */
+  max-width: 60vw;
+  margin: auto;
+  justify-items: center;
+ 
+}
+.van-card{
+
+
+}
+.van-card a {
+  color: #161616;
+  text-decoration: none;
+}
+.van-card .van-card-img{
+  max-width: 100%;
+  border-radius: 10px;
+  padding-bottom: 1rem;
+}
+.van-card-title h2{
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+.van-card-title h2 span {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.van-type {
+  padding:0.5rem 1rem  ; 
+  font-style: normal;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  background-color: #FFEAD0;
+  color: #4D4D4D;
+  transition: 200ms all cubic-bezier(0.4, 0, 0.2, 1);
+  width: 200px;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+.van-type:hover {
+  color: #FFEAD0;
+}
+
+.van-type:focus {
+  outline: none;
+}
+
+.van-type.selected {
+  color: #FFEAD0;
+}
+
+.van-type.simple:hover,
+.van-type.simple.selected {
+  background-color: #E17654;
+}
+
+.van-type.rugged:hover,
+.van-type.rugged.selected {
+  background-color: #115E59;
+}
+
+.van-type.luxury:hover,
+.van-type.luxury.selected {
+  background-color: #161616;
+}
+
+.van-type.clear-filters {
+  margin-left: -20px;
+  height: 34px;
+  padding: 6px 26px;
+  font-style: normal;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  text-decoration: underline;
+  background-color: transparent;
+  color: #4D4D4D;
+}
+
+i[class*='van-type-'] {
+  padding: 7px 14px;
 }

@@ -5,7 +5,7 @@ export default function Navbar() {
     <div className="navbar">
     <h1>#VANLIFE</h1>
       <nav>
-        <Link className="nav-link" to={"/"}>Home</Link>
+        {/* <Link className="nav-link" to={"/"}>Home</Link> */}
         <Link className="nav-link" to={"/about"}>About</Link>
 
         <Link className="nav-link" to={"/vans"}>Vans</Link>
