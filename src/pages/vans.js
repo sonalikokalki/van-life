@@ -31,7 +31,14 @@ export default function Vans() {
     <>
       <div className="about">
         <h1>Explore our van options🚐</h1>
-        <div className="van-list">{vanElement}</div>
+        {vans.length > 0 ? (
+          <div className="van-list">{vanElement}</div>
+        ) : (
+       
+            
+            <h3 style={{'textAlign':"center"}}> Loading...</h3>
+        
+        )}
       </div>
     </>
   );
